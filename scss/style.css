@@ -1,0 +1,123 @@
+.bg-primary, .bg-secondary, .bg-main {
+  padding: 30px;
+}
+
+.btn-primary, .btn-secondary, .btn-main {
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 12px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn-main:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.bg-primary {
+  background-color: #e38826;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.bg-secondary {
+  background-color: #006970;
+}
+
+.bg-main {
+  background-color: #004241;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.btn-primary {
+  color: #e38826;
+}
+
+.btn-secondary {
+  color: #006970;
+}
+
+.btn-main {
+  color: #004241;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+.testimonial {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px;
+}
+
+.testimonial .grid {
+  height: 400px;
+  width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  border-radius: 15px;
+}
+
+.testimonial a {
+  text-decoration: none;
+}
+
+.testimonial p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: sans-serif;
+  line-height: 1.7;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.testimonial h1 {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .testimonial {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .testimonial .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 300px;
+    height: 200px;
+  }
+  .bg-primary, .bg-secondary, .bg-main {
+    padding: 20px;
+  }
+  .bg-primary {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+  .bg-main {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

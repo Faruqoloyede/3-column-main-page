@@ -1,0 +1,51 @@
+%bg {
+    padding: 30px;
+}
+
+%btn {
+    background-color: $back-color;
+    border-radius: 30px;
+    padding: 12px 20px;
+    margin-top: 40px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: $back-color;
+        border: 1px solid $back-color;
+    }
+}
+
+.bg-primary {
+    @extend %bg;
+    background-color: $sedan-color;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.bg-secondary {
+    @extend %bg;
+    background-color: $surf-color;
+}
+
+.bg-main {
+    @extend %bg;
+    background-color: $luxury-color;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-primary {
+    @extend %btn;
+    color: $sedan-color;
+}
+
+.btn-secondary {
+    @extend %btn;
+    color:$surf-color;
+}
+
+.btn-main {
+    @extend %btn;
+    color: $luxury-color;
+}
